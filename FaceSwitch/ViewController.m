@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "UISwitch+ZMAdd.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UISwitch *switch_;
 
 @end
 
@@ -16,7 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.switch_.on = YES;
+    self.switch_.faceColor = [UIColor redColor];
+    self.switch_.valueChangedHandler = ^(BOOL on){
+        NSLog(@"switch_: %d", on);
+    };
 }
 
 

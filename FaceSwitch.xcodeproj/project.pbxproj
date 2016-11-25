@@ -13,6 +13,7 @@
 		B38B75051DE7DF6D0024B9E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B38B75031DE7DF6D0024B9E7 /* Main.storyboard */; };
 		B38B75071DE7DF6D0024B9E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38B75061DE7DF6D0024B9E7 /* Assets.xcassets */; };
 		B38B750A1DE7DF6D0024B9E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B38B75081DE7DF6D0024B9E7 /* LaunchScreen.storyboard */; };
+		B38B75141DE7DF8D0024B9E7 /* UISwitch+ZMAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B75131DE7DF8D0024B9E7 /* UISwitch+ZMAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		B38B75061DE7DF6D0024B9E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B38B75091DE7DF6D0024B9E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B38B750B1DE7DF6D0024B9E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B38B75121DE7DF8D0024B9E7 /* UISwitch+ZMAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwitch+ZMAdd.h"; sourceTree = "<group>"; };
+		B38B75131DE7DF8D0024B9E7 /* UISwitch+ZMAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+ZMAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		B38B74F91DE7DF6D0024B9E7 /* FaceSwitch */ = {
 			isa = PBXGroup;
 			children = (
+				B38B75111DE7DF750024B9E7 /* FaceSwitch */,
 				B38B74FD1DE7DF6D0024B9E7 /* AppDelegate.h */,
 				B38B74FE1DE7DF6D0024B9E7 /* AppDelegate.m */,
 				B38B75001DE7DF6D0024B9E7 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				B38B74FB1DE7DF6D0024B9E7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B38B75111DE7DF750024B9E7 /* FaceSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				B38B75121DE7DF8D0024B9E7 /* UISwitch+ZMAdd.h */,
+				B38B75131DE7DF8D0024B9E7 /* UISwitch+ZMAdd.m */,
+			);
+			name = FaceSwitch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +166,7 @@
 			files = (
 				B38B75021DE7DF6D0024B9E7 /* ViewController.m in Sources */,
 				B38B74FF1DE7DF6D0024B9E7 /* AppDelegate.m in Sources */,
+				B38B75141DE7DF8D0024B9E7 /* UISwitch+ZMAdd.m in Sources */,
 				B38B74FC1DE7DF6D0024B9E7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +289,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U8N666U5AW;
 				INFOPLIST_FILE = FaceSwitch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.realswifter.FaceSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,6 +302,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U8N666U5AW;
 				INFOPLIST_FILE = FaceSwitch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.realswifter.FaceSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
